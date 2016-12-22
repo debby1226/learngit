@@ -1,4 +1,4 @@
-#²¶»ñÍøÂçÊı¾İÁ·Ï°
+#exercise2
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import io
