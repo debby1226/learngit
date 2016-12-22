@@ -1,0 +1,16 @@
+#²¶»ñÍøÂçÊı¾İÁ·Ï°
+from urllib.request import urlopen
+from bs4 import BeautifulSoup
+import io
+import re
+html=urlopen("http://jingyan.baidu.com/article/e5c39bf57e6ba239d760331f.html")
+bsObj=BeautifulSoup(html,"html.parser")
+#print(bsObj)
+print("----------------------")
+
+for link in bsObj.findAll("a"):
+ if "class" in link.attrs:
+  if 'href' in link.attrs:
+    print(link.attrs['href'])
+
+
